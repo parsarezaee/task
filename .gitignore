@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+postgres/
+/postgres/*
+postgres-data/
+/postgres-data/*
+
+
 # Distribution / packaging
 .Python
 build/
