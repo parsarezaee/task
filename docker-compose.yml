@@ -22,5 +22,5 @@ services:
        POSTGRES_NAME: delta
        POSTGRES_PASSWORD: parsa1234
      volumes:
-       - ./db/postgres-data:/var/lib/postgresql/data
+       - ./data/postgres-data:/var/lib/postgresql/data
 
