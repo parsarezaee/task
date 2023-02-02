@@ -23,4 +23,5 @@ services:
        POSTGRES_PASSWORD: parsa1234
      volumes:
        - ./data/postgres-data:/var/lib/postgresql/data
+      
 

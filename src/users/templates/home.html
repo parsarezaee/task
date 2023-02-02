@@ -8,6 +8,8 @@
   <br>
   Your Email: {{ user.email }}
   <br>
+  Your Tenant ID: {{ user.user_tenant_type.id }}
+  <br>
   <a href="{% url 'logout' %}">Log out</a>
 {% else %}
   <p>You are not logged in</p>
