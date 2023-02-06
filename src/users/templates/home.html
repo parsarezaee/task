@@ -8,7 +8,11 @@
   <br>
   Your Email: {{ user.email }}
   <br>
-  Your Tenant ID: {{ user.user_tenant_type.id }}
+  {% if user.user_tenant is empty%}
+    You are not a tenant user
+  {% else %}
+    Your Tenant ID: {{ user.user_tenant.id }}
+  {% endif %}
   <br>
   <a href="{% url 'logout' %}">Log out</a>
 {% else %}

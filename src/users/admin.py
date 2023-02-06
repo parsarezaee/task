@@ -11,14 +11,14 @@ class UserAdmin(UserAdmin):
     list_display = ['first_name', 'email', 'is_staff', 'is_active']
     list_filter = ['email', 'is_staff', 'is_active']
     fieldsets = (
-            (None, {"fields": ("first_name", "last_name", "email", "user_tenant_type", "password")}),
+            (None, {"fields": ("first_name", "last_name", "email", "user_tenant", "password")}),
             ("Permissions", {"fields": ("is_staff", "is_active", "groups", "user_permissions")}),
         )    
     add_fieldsets = (
         (None, {
             "classes": ("wide",),
             "fields": (
-                "first_name", "last_name", "email", "user_tenant_type", "password1", "password2", "is_staff",
+                "first_name", "last_name", "email", "user_tenant", "password1", "password2", "is_staff",
                 "is_active", "groups", "user_permissions"
             )}
         ),

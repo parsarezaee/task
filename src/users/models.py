@@ -3,8 +3,7 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from demo_shared.models import TenantType
-
+from client.models import Client
 
 
 class CustomManagerUser(BaseUserManager):
@@ -43,8 +42,7 @@ class CustomUser(AbstractUser):
     first_name = models.CharField(_("first name"), max_length=50)
     last_name = models.CharField(_("last name"), max_length=50)
     email = models.EmailField(_("email address"), unique=True)
-    user_tenant_type = models.ForeignKey(TenantType, on_delete=models.CASCADE, null=True)
-
+    user_tenant = models.ForeignKey(Client, on_delete=models.CASCADE ,null=True)
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ['first_name', 'last_name',]
 
