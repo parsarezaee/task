@@ -103,7 +103,7 @@ DATABASES = {
         'USER': 'parsa',
         'PASSWORD': 'parsa1234',
         'HOST': 'db',
-        'PORT': '5432',
+        'PORT': 5432,
     }
 }
 
