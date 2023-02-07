@@ -2,6 +2,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Loaddata](#loaddata)
+* [Passwords](#passwords)
 
 ## Technologies
 Project is created with:
@@ -21,3 +22,10 @@ To loaddata:
 $ python3 manage.py loaddata ./scripts/client_db.json
 $ python3 manage.py loaddata ./scripts/users_db.json
 ```
+
+## Passwords
+User1: user1234USER
+<br>
+User2: user12345USER
+<br>
+Admin: 1234
