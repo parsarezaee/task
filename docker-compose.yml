@@ -11,7 +11,7 @@ services:
       - "./db/files/media:/src/media:rw"
     ports:
       - "8000:8000"
-    links: 
+    depends_on: 
       - db
 
   db:
@@ -28,7 +28,7 @@ services:
   pgadmin:
      image: dpage/pgadmin4:latest
      container_name: delta-pgadmin
-     links:
+     depends_on:
        - db
      ports:
        - "5051:80"
