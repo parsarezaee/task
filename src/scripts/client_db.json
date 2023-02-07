@@ -1,0 +1,22 @@
+[
+  {
+    "model": "client.client",
+    "pk": 2,
+    "fields": { "schema_name": "tenant1", "name": "tenant1" }
+  },
+  {
+    "model": "client.client",
+    "pk": 3,
+    "fields": { "schema_name": "tenant2", "name": "tenant2" }
+  },
+  {
+    "model": "client.domain",
+    "pk": 2,
+    "fields": { "domain": "tenant1.localhost", "tenant": 2, "is_primary": true }
+  },
+  {
+    "model": "client.domain",
+    "pk": 3,
+    "fields": { "domain": "tenant2.localhost", "tenant": 3, "is_primary": true }
+  }
+]

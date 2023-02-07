@@ -1,0 +1,56 @@
+[
+  {
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$ByjzLntEb2Y72VZ2yyeX1i$C0UG225M3c7qxSyRvjLl82b2HP5KLJ901MMZTk5QZr4=",
+      "last_login": "2023-02-06T20:27:06.033Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-02-02T20:14:30.078Z",
+      "first_name": "parsa",
+      "last_name": "rz",
+      "email": "parsa@gmail.com",
+      "user_tenant": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$XjRsGtOGwyH79bhZSDet1a$eIvpnxqGA+nLNwfWcnAydYzxVXwViU4sAXCCUsHcf/M=",
+      "last_login": "2023-02-06T20:23:15.423Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-02-06T20:21:04.342Z",
+      "first_name": "user1",
+      "last_name": "user1_last",
+      "email": "user1@gmail.com",
+      "user_tenant": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$JV8qGJOGyeV7OyAYXxAYea$hMopmsiyEaKclUwde2X6UHsxw59EYTFix1IYFCxhV9s=",
+      "last_login": "2023-02-06T20:28:21.478Z",
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-02-06T20:21:58.615Z",
+      "first_name": "user2",
+      "last_name": "user2_last",
+      "email": "user2@gmail.com",
+      "user_tenant": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
